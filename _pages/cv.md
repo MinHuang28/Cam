@@ -11,49 +11,46 @@ redirect_from:
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* Ph.D in Earth Sciences, University of Cambridge, 2022-now
+  * Supervisor: Prof. John Rudge
 
-Work experience
-======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* M.S. in Geodynamics, Institute of Geology and Geophysics, Chinese Academy of Sciences, 2019-2022
+  * Supervisor: Dr. Yang Li 
+  * Key Courses: Foundation of Geodynamics, Finite Element Method and Computational Geodynamics, Physics of the Earth’s interior, Rheology in the Earth’s Interior
+  * M.S. Degree Thesis: Effects of heterogeneous thermal, compositional and rheological properties on the long-term evolution of deep mantle thermochemical piles
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* B.S. in Geology, School of Earth Science and Engineering, Sun Yat-Sen University, 2015-2019
+  * Supervisor: Prof. Yu Zhou
+  * Key Courses: Igneous Petrology, Sedimentary Petrology, Petrology of Metamorphic Rocks, Paleontology, Structure Geology, Historical Geology, Geomorphology and Quaternary Geology
+  * B.S. Degree Thesis: Earthquake deformation from optical images: advantages, problems, and a new DEM-based method for orthorectification error corrections
 
 Publications
 ======
-  <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
+* M. Huang, Y. Zhou, L. Lu, W. Zheng & P. Zhang (2019). Some Thoughts on Measuring Earthquake Deformation Using Optical Imagery, IEEE Transactions on Geoscience and Remote Sensing, 58(2), 1052-1062. DOI:[10.1109/TGRS.2019.2943192](10.1109/TGRS.2019.2943192)
+Contribution:
+  * Compiled and analysed all the earthquakes that have been investigated with optical image matching by 2019
+  * Proposed a new DEM-based method using the ALOS World 3D DEM to reduce the orthorectification errors
+  * Re-analysed coseismic slip distribution and shallow slip deficit (SSD) and found that the SSD model may primarily be artefacts in the measurements
+
+* M. Huang, Y. Li & L. Zhao (2022). Effects of Heterogeneous Thermal, Compositional and Rheological Properties on the Long-Term Evolution of Deep Mantle Thermochemical Piles, Science China: Earth Science, 1-12. DOI: [https://doi.org/10.1007/s11430-021-9950-7]( https://doi.org/10.1007/s11430-021-9950-7)
+Contribution:
+  * Performed a series of numerical experiments over a range of buoyancy ratios, compositional viscosity ratios, and internal heating rates and analysed their effects to thermochemical piles
+  * Compared simulations with constant heating and radioactive decay heating, and found that although simulations with radioactive decay showed a slight decline of the stability of piles, there was little difference among them
+
+Field Trips
 ======
-  <ul>{% for post in site.talks %}
-    {% include archive-single-talk-cv.html %}
-  {% endfor %}</ul>
-  
-Teaching
+* Composite geological field trip around Ningxia district, Northeastern Tibetan Plateau (August 2018, 20 days)
+* Comprehensive experiments of geology in Changjiang, Hainan Province, China (July 2018, 15 days)
+* Geological mapping in Chengjiang, Yunnan Province, China (July 2017, 25 days)
+* Field work in the Linzhi, Southern Tibetan Pleteau (July 2017, 8 days)
+* Elementary geological field trip in Yichang, Hubei Province, China (June 2016, 15 days)
+
+Skills
 ======
-  <ul>{% for post in site.teaching %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
+* Good at Matlab, ArcGIS, and LaTeX
+* Just Start with python and FEniCS
+
+Activities
 ======
-* Currently signed in to 43 different slack teams
+* Current player of the University of Cambridge badminton team
+* Volunteer for science popularization of Danxiashan UNESCO Global Geopark, China
