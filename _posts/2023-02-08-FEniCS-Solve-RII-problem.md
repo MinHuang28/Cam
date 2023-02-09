@@ -1,13 +1,10 @@
 ---
----
 title: 'FEniCS-Solve RII problem'
 date: 2023-02-09
-permalink: 
+permalink:
 tags:
   - FEniCS
   - RII
----
-
 ---
 
 ## Governing equations for RII problems
