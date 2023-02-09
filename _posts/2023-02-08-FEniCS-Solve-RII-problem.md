@@ -4,11 +4,11 @@ layout: post
 date: 2023-02-08 17:18
 # image: /assets/images/markdown.jpg
 headerImage: false
-tag:
-- FEniCS
-- PDE
+#tag:
+#- FEniCS
+#- PDE
 star: false
-category: blog
+#category: blog
 author: Min
 description: Solving the governing equations of reaction-infiltration instability problem
 ---
