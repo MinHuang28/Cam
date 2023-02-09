@@ -88,13 +88,13 @@ author:
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : "https://scholar.google.com/citations?user=P52fsX4AAAAJ&hl=en"
   email            :
-  researchgate     : "https://www.researchgate.net/profile/Min-Huang-82"
+  researchgate     : #"https://www.researchgate.net/profile/Min-Huang-82"
   uri              :
   bitbucket        :
   codepen          :
   dribbble         :
   flickr           :
-  facebook         : "https://www.facebook.com/MinHuang1128/"
+  facebook         : #"https://www.facebook.com/MinHuang1128/"
   foursquare       :
   github           : 
   google_plus      :
