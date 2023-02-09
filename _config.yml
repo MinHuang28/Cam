@@ -11,9 +11,9 @@ title                    : "Min Huang"
 title_separator          : "-"
 name                     : &name "Min Huang"
 description              : &description "personal description"
-url                      : https://MinHuang28.github.io/Cam # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://MinHuang28.github.io/Cam" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "academicpages/academicpages.github.io"
+repository               : "MinHuang28.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
@@ -57,7 +57,7 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : &MinHuang1128
+  username               : MinHuang1128
 facebook:
   username               : MinHuang1128
   app_id                 :
@@ -94,15 +94,15 @@ author:
   codepen          :
   dribbble         :
   flickr           :
-  facebook         :"https://www.facebook.com/MinHuang1128/"
+  facebook         : "https://www.facebook.com/MinHuang1128/"
   foursquare       :
   github           : 
   google_plus      :
   keybase          :
-  instagram        :
+  instagram        : "https://www.instagram.com/minhuang1128/"
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         :
+  linkedin         : "https://www.linkedin.com/in/min-huang-17a617257/"
   orcid            : #"http://orcid.org/yourorcidurl"
   pinterest        :
   soundcloud       :
@@ -176,13 +176,13 @@ kramdown:
 # Collections
 collections:
   teaching:
-    output: true
+    output: false
     permalink: /:collection/:path/
   publications:
     output: true
     permalink: /:collection/:path/
   portfolio:
-    output: true
+    output: false
     permalink: /:collection/:path/
   talks:
     output: true
