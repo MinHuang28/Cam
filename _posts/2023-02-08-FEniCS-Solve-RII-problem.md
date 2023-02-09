@@ -1,16 +1,13 @@
 ---
-title: "FEniCS project | Solve RII problem"
-layout: post
-date: 2023-02-08 17:18
-# image: /assets/images/markdown.jpg
-headerImage: false
-#tag:
-#- FEniCS
-#- PDE
-star: false
-#category: blog
-author: Min
-description: Solving the governing equations of reaction-infiltration instability problem
+---
+title: 'FEniCS-Solve RII problem'
+date: 2023-02-09
+permalink: 
+tags:
+  - FEniCS
+  - RII
+---
+
 ---
 
 ## Governing equations for RII problems
