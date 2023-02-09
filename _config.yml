@@ -7,13 +7,13 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Min Huang"
+title                    : "Min Huang/Personal Homepage"
 title_separator          : "-"
 name                     : &name "Min Huang"
 description              : &description "personal description"
-url                      : "https://MinHuang28.github.io/Cam" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://minhuang28.github.io/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "MinHuang28.github.io"
+repository               : "MinHuang28/minhuang28.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
@@ -176,13 +176,13 @@ kramdown:
 # Collections
 collections:
   teaching:
-    output: false
+    output: true
     permalink: /:collection/:path/
   publications:
     output: true
     permalink: /:collection/:path/
   portfolio:
-    output: false
+    output: true
     permalink: /:collection/:path/
   talks:
     output: true
