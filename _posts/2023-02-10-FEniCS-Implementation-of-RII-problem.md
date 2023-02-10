@@ -26,7 +26,7 @@ import scipy.optimize as opt
 
 The plotting tool and the scipy and numpy packages are also imported.
 
-Then, create a mesh covering the rectangle square. We will let the mesh consist of 64 $$\times$$ 64 squares and define function space.
+Then, create a mesh covering the rectangle square. We will let the mesh consist of 64*64 squares and define function space.
 
 ```
 mesh = RectangleMesh(Point(0, 0), Point(2.0* np.pi/10, 1), 64, 64)
