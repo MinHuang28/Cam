@@ -7,6 +7,8 @@ tags:
   - PDE
 ---
 
+
+
 FEniCS is an open-source software platform for solving partial differential equations (PDEs) using the finite element method (FEM). The primary programming language for using FEniCS is python, which is quite simple to use. 
 
 Therefore, based on the mathematical equation that describes the RII problem in the previous blog, we could code up the PDEs with FEniCS and python.
