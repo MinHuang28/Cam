@@ -7,6 +7,9 @@ tags:
   - PDE
 ---
 
+
+Governing equations
+
 $$
 {\partial \phi \over \partial t} = P + \chi
 $$
@@ -22,7 +25,6 @@ $$
 $$
 q \cdot ({\nabla \chi \over Da} - \hat z)= {1\over DaPe} {\partial \over \partial x}(\phi{\partial \chi \over \partial x})-\chi
 $$
-
 
 
 ## Step_1: Solve Buoyancy-driven compaction (P)
@@ -154,8 +156,6 @@ $$
 \phi =1, \chi =1, {\partial P\over \partial z} =0,  (z =0)\\
 {\partial P\over \partial z} =0,  (z =1)
 $$
-
----
 
 
 
