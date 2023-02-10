@@ -1,13 +1,11 @@
 ---
-title: 'FEniCS-Solve RII problem'
-date: 2023-02-09
+title: 'FEniCS-Variation formulation of RII problem'
+date: 2023-02-08
 permalink:
 tags:
   - FEniCS
   - PDE
 ---
-
-## Governing equations for RII problems
 
 $$
 {\partial \phi \over \partial t} = P + \chi
@@ -150,7 +148,8 @@ $$
 
 Domain is a rectangle area
 
-Boundary condition is 
+Boundary condition is
+
 $$
 \phi =1, \chi =1, {\partial P\over \partial z} =0,  (z =0)\\
 {\partial P\over \partial z} =0,  (z =1)
