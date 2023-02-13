@@ -8,7 +8,6 @@ tags:
 ---
 
 
-
 Create the weak form of RII governing equations for FEniCS project
 
 ## Governing equations for RII problems
@@ -29,8 +28,6 @@ $$
 q \cdot ({\nabla \chi \over Da} - \hat z)= {1\over DaPe} {\partial \over \partial x}(\phi{\partial \chi \over \partial x})-\chi
 $$
 
-
-
 ## Step_1: Solve Buoyancy-driven compaction (P)
 
 Fluid flow is given by Darcy's law (3), and the mass conservation for fluid is given by (2). We obtain the **Strong form** of the equation by combining (2) and (3),
@@ -46,19 +43,25 @@ $$
 $$
 
 the product rule of differentiation implies that
+
 $$
 P_1 (\nabla \cdot [K(\widehat z - S\nabla P)] = \nabla \cdot(P_1 K(\widehat z - S\nabla P)) - \nabla P_1 \cdot  K(\widehat z - S\nabla P)
 $$
+
 So the Eq (6) becomes:
+
 $$
 \int_\Omega MP P_1 + \int_\Omega [\nabla \cdot(P_1 K(\widehat z - S\nabla P)) - \nabla P_1 \cdot  K(\widehat z - S\nabla P) ]=0
 $$
-Apply the divergence theorem ($ \iiint_V (\nabla \cdot {P})dV = \oiint_S (P \cdot \widehat n)dS $) to generate boundary integrals, surface normal $ \widehat n $, surface domain $ \Gamma = \partial \Omega $, 
+
+Apply the divergence theorem ($$ \iiint_V (\nabla \cdot {P})dV = \oiint_S (P \cdot \widehat n)dS $$) to generate boundary integrals, surface normal $$ \widehat n $$, surface domain $$ \Gamma = \partial \Omega $$, 
+
 $$
 \int_\Omega MP P_1 + \int_\Gamma P_1 K(\widehat z-S\nabla P) \cdot n - \int_\Omega \nabla P_1 \cdot K(\widehat z -S\nabla P) =0
 $$
 
 The weak form is 
+
 $$
 \int_\Omega MP P_1 -\int_\Omega P_1 K S \nabla P\cdot n + \int_\Omega KS \nabla P_1 \cdot \nabla P = \int_\Omega K {\partial P_1 \over \partial z} -\int_\Gamma P_1 K(\widehat z\cdot n)
 $$
@@ -151,6 +154,7 @@ $$
 Domain is a rectangle area
 
 Boundary condition is 
+
 $$
 \phi =1, \chi =1, {\partial P\over \partial z} =0,  (z =0)\\
 {\partial P\over \partial z} =0,  (z =1)
