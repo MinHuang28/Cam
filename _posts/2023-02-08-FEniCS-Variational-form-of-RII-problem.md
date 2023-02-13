@@ -54,7 +54,7 @@ $$
 \int_\Omega MP P_1 + \int_\Omega [\nabla \cdot(P_1 K(\widehat z - S\nabla P)) - \nabla P_1 \cdot  K(\widehat z - S\nabla P) ]=0
 $$
 
-Apply the divergence theorem ($$ \iiint_V (\nabla \cdot {P})dV = \oiint_S (P \cdot \widehat n)dS $$) to generate boundary integrals, surface normal $$ \widehat n $$, surface domain $$ \Gamma = \partial \Omega $$, 
+Apply the divergence theorem ($$ \iiint_V (\nabla \cdot {P})dV = \iint_S (P \cdot \widehat n)dS $$) to generate boundary integrals, surface normal $$ \widehat n $$, surface domain $$ \Gamma = \partial \Omega $$, 
 
 $$
 \int_\Omega MP P_1 + \int_\Gamma P_1 K(\widehat z-S\nabla P) \cdot n - \int_\Omega \nabla P_1 \cdot K(\widehat z -S\nabla P) =0
@@ -85,19 +85,25 @@ $$
 $$
 
 Apply the product rule,
+
 $$
 {\partial \over \partial x} (\phi{\partial \chi \over \partial x}) C_1 = \phi{\partial \over \partial x}({\partial \chi \over \partial x})C_1+{\partial \phi \over \partial x}{\partial \chi \over \partial x} C_1
 $$
+
 Integrating by parts,
+
 $$
 \int_\Omega {\partial \over \partial x}({\partial \chi \over \partial x})C_1 = [{\partial \chi \over \partial x} C_1]_{\partial \Omega} -\int_\Omega {\partial \chi \over \partial x} {\partial C_1 \over \partial x}
 $$
 
 The eq(13) becomes,
+
 $$
 \int_\Omega q\cdot {\nabla \chi \over Da} C_1 - \int_\Omega q \cdot \hat z C_1 - \int_\Omega{1 \over DaPe} [( \phi{\partial \chi \over \partial x} C_1)_{\partial \Omega} - \phi {\partial \chi \over \partial x} {\partial C_1 \over \partial x}+{\partial \phi \over \partial x}{\partial \chi \over \partial x} C_1]+\int_\Omega \chi C_1 =0
 $$
+
 So the weak form is, 
+
 $$
 \int_\Omega q \cdot {\nabla \chi \over Da} C_1 + \int_\Omega{1 \over DaPe} [\phi {\partial \chi \over \partial x} {\partial C_1 \over \partial x} -{\partial \phi \over \partial x}{\partial \chi \over \partial x} C_1]+\int_\Omega \chi C_1 -{1 \over DaPe} [(\phi {\partial \chi \over \partial x} C_1)_{\partial \Omega}  = \int_\Omega q \cdot \hat z C_1
 $$
