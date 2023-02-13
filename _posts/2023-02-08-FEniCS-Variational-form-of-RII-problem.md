@@ -7,6 +7,8 @@ tags:
   - PDE
 ---
 
+Create the weak form of RII governing equations for FEniCS project
+
 ## Governing equations for RII problems
 
 $$
@@ -24,8 +26,6 @@ $$
 $$
 q \cdot ({\nabla \chi \over Da} - \hat z)= {1\over DaPe} {\partial \over \partial x}(\phi{\partial \chi \over \partial x})-\chi
 $$
-
-
 
 ## Step_1: Solve Buoyancy-driven compaction (P)
 
