@@ -1,5 +1,3 @@
-<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
-
 ---
 title: 'FEniCS Implementation for RII problem'
 date: 2023-02-10
@@ -12,7 +10,6 @@ tags:
 Code up the RII equations in FEniCS 
 
 
-
 ## FEniCS Implementation for RII problem
 
 FEniCS is an open-source software platform for solving partial differential equations (PDEs) using the finite element method (FEM). The primary programming language for using FEniCS is python, which is quite simple to use. 
@@ -21,7 +18,7 @@ Therefore, based on the mathematical equation that describes the RII problem in 
 
 First, the FEniCS is imported.
 
-Note: Some older tutorials might import everything the from Fenics package (e.g., from fenics import *), which is not a good practice. It is preferable to list any commands you might use and to be fully aware of their usage in your code.
+Note: Some older tutorials might import everything the from Fenics package (e.g., from fenics import*), which is not a good practice. It is preferable to list any commands you might use and to be fully aware of their usage in your code.
 
 ```
 from fenics import DirichletBC, Function, UserExpression, RectangleMesh, FunctionSpace, Point, Constant, project, DOLFIN_EPS, File, FacetNormal,TrialFunction, TestFunction, dx, grad, dot, Dx, inner, ds, plot, solve
