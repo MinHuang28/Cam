@@ -146,6 +146,7 @@ h_n = project(phi_i, V)
 ```
 
  Define boundary conditions with
+ 
 $$
 \phi =1, \chi =1, {\partial P\over \partial z} =0,  (z =0)\\
 {\partial P\over \partial z} =0,  (z =1)
@@ -166,9 +167,11 @@ bcs = [bc_C, bc_h]
 ```
 
 Define buoyancy-driven compacting problem
+
 $$
 \int_\Omega MP P_1 + \int_\Omega KS \nabla P_1 \cdot \nabla P = \int_\Omega K {\partial P_1 \over \partial z} -\int_\Gamma P_1 K(\widehat z\cdot n)
 $$
+
 In FEniCS, the variational formulation is defined by trial and test functions. The trial function is a function that approximates the solution to the PDE, and the test function is a function that is used to integrate the weak form of the PDE over the domain.
 
 ```
@@ -186,6 +189,7 @@ def compaction(V, h_n, M, S):
 ```
 
 Define reaction-infiltration problem
+
 $$
 \int_\Omega q \cdot {\nabla \chi \over Da} C_1+ \int_\Omega{\phi \over DaPe} {\partial C_1 \over \partial x} {\partial \chi \over \partial x}+\int_\Omega \chi C_1 = \int_\Omega q \cdot \hat z C_1
 $$
@@ -205,6 +209,7 @@ def reaction(V, Da, Pe, h_n, S):
 ```
 
 Define Time-dependent infiltration problem
+
 $$
 a(\phi,R)=\int_\Omega \phi R dx \\
 L_n(R) = \int_\Omega [\phi^n +(P+\chi)^n\Delta t] R dx
