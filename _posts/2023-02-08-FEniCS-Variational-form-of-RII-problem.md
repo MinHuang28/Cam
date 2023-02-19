@@ -1,5 +1,5 @@
 ---
-title: 'FEniCS-Solve RII problem'
+title: 'FEniCS-weak form of RII problem PDE'
 date: 2023-02-09
 permalink:
 tags:
