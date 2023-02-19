@@ -8,7 +8,7 @@ tags:
 ---
 
 
-## The full system of PDEs that govern the fluid mechanics
+The full system of PDEs that govern the fluid mechanics
 
 ## Governing equations
 
