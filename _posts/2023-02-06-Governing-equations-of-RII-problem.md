@@ -8,7 +8,7 @@ tags:
 ---
 
 
-# The full system of PDEs that govern the fluid mechanics
+## The full system of PDEs that govern the fluid mechanics
 
 ## Governing equations
 
@@ -46,7 +46,8 @@ Expand the partial derivatives and simplify (4) with (2)b to get
 $$
 \phi{\partial c_l\over \partial t} +\phi v_l \cdot \nabla  c_l = \nabla \cdot (\phi D \nabla c_l) + (c_\Gamma - c_l)\Gamma
 $$
-
+\\
+\\
 ## Non-dimensional Scales
 
 **Solubility** is assumed to be a linear function of height, $${\partial c_{eq} \over \partial z}=\beta$$, $$\beta$$ is the solubility gradient($$m^{-1}$$)
@@ -73,8 +74,8 @@ the **concentration** $$c_\Gamma$$ is offset from the equilibrium concentration 
 
 ​				$$\Gamma = \phi_0 w_0 \beta / \alpha \Gamma’$$,
 
-
-
+\\
+\\
 ## Non-dimensionalization step by step
 
 ### 1. The dimensionless mass conservation in the solid
@@ -124,7 +125,8 @@ We simplify the equations by taking the limit of small porosity $$\phi_0 <<M << 
 $$
 {\partial \phi \over \partial t}= P + \chi
 $$
-
+\\
+\\
 ### 2. The dimensionless mass conservation in the liquid
 
 The scaled eq(2) $${\partial \phi \over \partial t} + \nabla \cdot (\phi v_l)=\Gamma$$ becomes,
@@ -148,7 +150,8 @@ $$M= {\beta H \over \alpha}$$,  so $${\alpha\over \beta H} = 1/M$$,
 $$
 M {\partial \phi \over \partial t} + \nabla \cdot ( \phi v_l)= M\chi
 $$
-
+\\
+\\
 ### 3. The dimensionless Darcy’s law
 
 eq (3) Darcy’s law, $$\phi (v_l-v_s) = K ((1-\phi) \Delta\rho g\hat z -\nabla P)$$, 
@@ -180,7 +183,8 @@ Stiffness $$S = M  {\delta^2 \over H^2} = {\beta H \over \alpha } {K_0 \zeta \ov
 $$
 \phi v_l =K  (\hat z - S \nabla P)
 $$
-
+\\
+\\
 ### 4. The dimensionless Chemical component conservation
 
 eq (4) $$\phi{\partial c_l\over \partial t} +\phi v_l \cdot \nabla c_l = \nabla \cdot (\phi D \nabla c_l) + (c_\Gamma - c_l)\Gamma$$, 
@@ -202,9 +206,17 @@ $$
 \phi v_l\cdot  \nabla c_l =  {D  \over w_0 H } \nabla \cdot ( \phi \nabla c_l) + \chi
 $$
 
-Undersaturation $$\chi = Da(z-c_l)$$, $$c_l = z - {\chi \over Da}$$, $$ \nabla c_l = \nabla(z- {\chi \over Da})=z-{\nabla\chi \over Da}$$
+Undersaturation $$\chi = Da(z-c_l)$$, $$c_l = z - {\chi \over Da}$$, 
 
-And $$\nabla \cdot (\phi \nabla c_l)={\partial \over \partial x} (\phi {\partial c_l\over \partial x}) + {\partial \over \partial z} (\phi {\partial c_l\over \partial z})$$, $$c_l$$ is meaningful in x axis, so $$\nabla \cdot (\phi \nabla c_l)={\partial \over \partial x} (\phi {\partial c_l\over \partial x}) =-{1\over Da} {\partial \over \partial x} (\phi {\partial \chi\over \partial x})$$
+$$
+\nabla c_l = \nabla(z- {\chi \over Da})=z-{\nabla\chi \over Da}
+$$
+
+And $$\nabla \cdot (\phi \nabla c_l)={\partial \over \partial x} (\phi {\partial c_l\over \partial x}) + {\partial \over \partial z} (\phi {\partial c_l\over \partial z})$$, $$c_l$$ is meaningful in x axis, so 
+
+$$
+\nabla \cdot (\phi \nabla c_l)={\partial \over \partial x} (\phi {\partial c_l\over \partial x}) =-{1\over Da} {\partial \over \partial x} (\phi {\partial \chi\over \partial x})
+$$
 
 So the equation (29) becomes,
 
@@ -215,7 +227,8 @@ $$
 $$
 \phi v_l\cdot  [{\nabla\chi \over Da}-z] =  {1  \over Da Pe } {\partial \over \partial x} (\phi {\partial \chi\over \partial x}) - \chi
 $$
-
+\\
+\\
 ## Dimensionless equations
 
 So the four dimensionless governing equations (1)-(4) become,
