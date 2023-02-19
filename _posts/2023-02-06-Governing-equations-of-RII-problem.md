@@ -47,8 +47,7 @@ $$
 \phi{\partial c_l\over \partial t} +\phi v_l \cdot \nabla  c_l = \nabla \cdot (\phi D \nabla c_l) + (c_\Gamma - c_l)\Gamma
 $$
 
-\\
-\\
+
 
 ## Non-dimensional Scales
 
@@ -76,8 +75,7 @@ the **concentration** $$c_\Gamma$$ is offset from the equilibrium concentration 
 
 ​				$$\Gamma = \phi_0 w_0 \beta / \alpha \Gamma’$$,
 
-\\
-\\
+
 
 ## Non-dimensionalization step by step
 
@@ -129,8 +127,7 @@ $$
 {\partial \phi \over \partial t}= P + \chi
 $$
 
-\\
-\\
+
 
 ### 2. The dimensionless mass conservation in the liquid
 
@@ -156,8 +153,7 @@ $$
 M {\partial \phi \over \partial t} + \nabla \cdot ( \phi v_l)= M\chi
 $$
 
-\\
-\\
+
 
 ### 3. The dimensionless Darcy’s law
 
@@ -191,8 +187,7 @@ $$
 \phi v_l =K  (\hat z - S \nabla P)
 $$
 
-\\
-\\
+
 
 ### 4. The dimensionless Chemical component conservation
 
@@ -237,8 +232,7 @@ $$
 \phi v_l\cdot  [{\nabla\chi \over Da}-z] =  {1  \over Da Pe } {\partial \over \partial x} (\phi {\partial \chi\over \partial x}) - \chi
 $$
 
-\\
-\\
+
 
 ## Dimensionless equations
 
