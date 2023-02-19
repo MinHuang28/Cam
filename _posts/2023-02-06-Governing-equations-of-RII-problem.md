@@ -8,11 +8,11 @@ tags:
 ---
 
 
-### The full system of PDEs that govern the fluid mechanics
+# The full system of PDEs that govern the fluid mechanics
 
-#### Governing equations
+## Governing equations
 
-1. **Conservation of mass** in both phases
+1.**Conservation of mass** in both phases
 
 $$
 {\partial (1-\phi) \over \partial t} + \nabla \cdot ((1-\phi)v_s)=-\Gamma
@@ -24,7 +24,7 @@ $$
 
 where $$\phi$$ is the porosity, $$(1-\phi)$$ is the fraction of solid phase, t is time, $$v_l$$ is fluid velocity, and $$v_s$$ is solid velocity, $$\Gamma$$ is the melting rate. We assume that $$\Gamma$$ is proportional to the undersaturation of soluble component in the melt, so $$\Gamma = -R(c_l-c_l^{eq})$$, where R is a kinetic coefficient with units 1/times.
 
-2. **Darcy’s law** (conservation of momentum for liquid)
+2.**Darcy’s law** (conservation of momentum for liquid)
 
 $$
 \phi (v_l-v_s) = K ((1-\phi) \Delta\rho g\hat z -\nabla P)
@@ -32,7 +32,7 @@ $$
 
 A Darcy flux$$\phi(v_l-v_s)$$ is driven by gravity $$g\hat z$$ associated with the density difference $$\Delta \rho$$, and by compaction pressure gradient $$\nabla P$$. The mobility K, representing the permeability k divided by liquid viscosity $$\mu$$, depends on the porosity. $$K =K_0 (\phi/\phi_0)^n$$, where $$K_0$$ is a reference mobility at a reference porosity $$\phi_0$$, and n is a constant. 
 
-3. **Chemical component conservation** equation, consisting of three contributions: diffusion, advection and chemical source term.
+3.**Chemical component conservation** equation, consisting of three contributions: diffusion, advection and chemical source term.
 
 $$
 {\partial \over \partial t}(\phi c_l) +\nabla \cdot (\phi v_l c_l) = \nabla \cdot (\phi D \nabla c_l) + \Gamma c_\Gamma
@@ -42,11 +42,12 @@ $$
 where D is diffusivity in the liquid phase; diffusion through the solid phase is negligible, $$C_\Gamma$$, is the concentration of reactively produced melts. 
 
 Expand the partial derivatives and simplify (4) with (2)b to get
+
 $$
 \phi{\partial c_l\over \partial t} +\phi v_l \cdot \nabla  c_l = \nabla \cdot (\phi D \nabla c_l) + (c_\Gamma - c_l)\Gamma
 $$
 
-#### Non-dimensional Scales
+## Non-dimensional Scales
 
 **Solubility** is assumed to be a linear function of height, $${\partial c_{eq} \over \partial z}=\beta$$, $$\beta$$ is the solubility gradient($$m^{-1}$$)
 
@@ -74,9 +75,9 @@ the **concentration** $$c_\Gamma$$ is offset from the equilibrium concentration 
 
 
 
-#### Non-dimensionalization step by step
+## Non-dimensionalization step by step
 
-##### 1. The dimensionless mass conservation in the solid
+### 1. The dimensionless mass conservation in the solid
 
 Starting with the first equation (1), $${\partial (1-\phi) \over \partial t} + \nabla \cdot ((1-\phi)v_s)=-\Gamma$$, 
 
@@ -124,7 +125,7 @@ $$
 {\partial \phi \over \partial t}= P + \chi
 $$
 
-##### 2. The dimensionless mass conservation in the liquid
+### 2. The dimensionless mass conservation in the liquid
 
 The scaled eq(2) $${\partial \phi \over \partial t} + \nabla \cdot (\phi v_l)=\Gamma$$ becomes,
 
@@ -148,7 +149,7 @@ $$
 M {\partial \phi \over \partial t} + \nabla \cdot ( \phi v_l)= M\chi
 $$
 
-##### 3. The dimensionless Darcy’s law
+### 3. The dimensionless Darcy’s law
 
 eq (3) Darcy’s law, $$\phi (v_l-v_s) = K ((1-\phi) \Delta\rho g\hat z -\nabla P)$$, 
 
@@ -180,7 +181,7 @@ $$
 \phi v_l =K  (\hat z - S \nabla P)
 $$
 
-##### 4. The dimensionless Chemical component conservation
+### 4. The dimensionless Chemical component conservation
 
 eq (4) $$\phi{\partial c_l\over \partial t} +\phi v_l \cdot \nabla c_l = \nabla \cdot (\phi D \nabla c_l) + (c_\Gamma - c_l)\Gamma$$, 
 
@@ -215,7 +216,7 @@ $$
 \phi v_l\cdot  [{\nabla\chi \over Da}-z] =  {1  \over Da Pe } {\partial \over \partial x} (\phi {\partial \chi\over \partial x}) - \chi
 $$
 
-#### Dimensionless equations
+## Dimensionless equations
 
 So the four dimensionless governing equations (1)-(4) become,
 $$
