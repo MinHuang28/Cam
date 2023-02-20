@@ -340,7 +340,7 @@ Define the form of equations and time loop
 
 ## Some thoughts from this benchmarks
 
-1.The solitary wave code is difficult to find online. I don't think they published their code with their article, so I couldn't find any. However, the worst mistake I made was not talking to my supervisor about it in a timely manner. I couldn’t do my project and I‘m at a loss on what to do. So it wasted me loads of time.
+1.The solitary wave code is difficult to find online. I don't think they published their code with their paper, so I couldn't find any. However, the worst mistake I made was not talking to my supervisor about it in a timely manner. It wasted me loads of time since I couldn’t do my project and I‘m at a loss on what to do.
 
 **LESSON 1: CONTACT YOUR SUPERVISOR IF YOU HAVE A PROBLEM**.
 
