@@ -61,7 +61,9 @@ the **concentration** $$c_\Gamma$$ is offset from the equilibrium concentration 
 Next, we need to make the equations dimensionless for these three reasons.
 
 1.Reduce the number of true parameters.
+
 2.Recognize the magnitudes of the various processes.
+
 3.Make the equations easier to solve numerically.
 
 
