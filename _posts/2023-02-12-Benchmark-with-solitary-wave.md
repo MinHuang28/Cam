@@ -330,8 +330,12 @@ Define the form of equations and time loop
 
 ## Some thoughts from this benchmarks
 
-1. The solitary wave code is difficult to find online. I don't think they published their code with their article, so I couldn't find any. However, the worst mistake I made was not talking to my supervisor about it in a timely manner. I couldn’t do my project and I‘m at a loss on what to do. So it wasted me loads of time.  **LESSON 1: CONTACT YOUR SUPERVISOR IF YOU HAVE A PROBLEM**.
-2. When comparing two different codes, make sure that our parameters and the parameters they use are indicating the same physical property (eg, symbol g only represent gravity not anything else), and that they are consistent through the entire code (e.g, not a=1 at first and a=2 at the following code). Make sure that no parameter is defined more than once. **LESSON 2: Carefully check every parameters**. 
-3. The initial code I used was scaled by the height H, but the solitary wave code was scaled using the comapction length $$\delta$$, thus we must scale it with the same characteristic scale. Also remember to scale the mesh. **LESSON 3: Scale the equations in a same way**.
-4. The solitary wave should be small enough to avoid the effect of the boundary. 
-5. Since we’re working on a finite domain and a discrete mesh, the solitary wave will never be perfect. When we increase the mesh resolution and decrease the time step, the differences should to be less apparent.
+1.The solitary wave code is difficult to find online. I don't think they published their code with their article, so I couldn't find any. However, the worst mistake I made was not talking to my supervisor about it in a timely manner. I couldn’t do my project and I‘m at a loss on what to do. So it wasted me loads of time.  **LESSON 1: CONTACT YOUR SUPERVISOR IF YOU HAVE A PROBLEM**.
+
+2.When comparing two different codes, make sure that our parameters and the parameters they use are indicating the same physical property (eg, symbol g only represent gravity not anything else), and that they are consistent through the entire code (e.g, not a=1 at first and a=2 at the following code). Make sure that no parameter is defined more than once. **LESSON 2: Carefully check every parameters**.
+
+3.The initial code I used was scaled by the height H, but the solitary wave code was scaled using the comapction length $$\delta$$, thus we must scale it with the same characteristic scale. Also remember to scale the mesh. **LESSON 3: Scale the equations in a same way**.
+
+4.The solitary wave should be small enough to avoid the effect of the boundary. 
+
+5.Since we’re working on a finite domain and a discrete mesh, the solitary wave will never be perfect. When we increase the mesh resolution and decrease the time step, the differences should to be less apparent.
