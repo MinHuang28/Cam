@@ -142,6 +142,17 @@ $$
 
 That is, porosity only changes by compaction. The compaction rate is controlled by the divergence of the melt flux and the viscous resistance of the matrix to volume changes.
 
+I'm not sure what's going on here since the equations should be as follows,
+
+$$
+{\partial \phi \over \partial t} = P
+$$
+
+$$
+P + \nabla \cdot [K (\hat z - \nabla P)]=0
+$$
+
+
 ## Weak form of the governing equations
 
 $$
