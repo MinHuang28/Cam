@@ -57,7 +57,7 @@ $$
 \int_\Omega MP P_1 + \int_\Omega [\nabla \cdot(P_1 K(\widehat z - S\nabla P)) - \nabla P_1 \cdot  K(\widehat z - S\nabla P) ]=0
 $$
 
-Apply the divergence theorem ($$ \iiint_V (\nabla \cdot {P})dV = \oiint_S (P \cdot \widehat n)dS $$) to generate boundary integrals, surface normal $$ \widehat n $$, surface domain $$ \Gamma = \partial \Omega $$, 
+Apply the divergence theorem ($$ \iiint_V (\nabla \cdot {P})dV = \iint_S (P \cdot \widehat n)dS $$) to generate boundary integrals, surface normal $$ \widehat n $$, surface domain $$ \Gamma = \partial \Omega $$, 
 
 $$
 \int_\Omega MP P_1 + \int_\Gamma P_1 K(\widehat z-S\nabla P) \cdot n - \int_\Omega \nabla P_1 \cdot K(\widehat z -S\nabla P) =0
@@ -69,7 +69,7 @@ $$
 \int_\Omega MP P_1 -\int_\Gamma P_1 K S \nabla P\cdot n + \int_\Omega KS \nabla P_1 \cdot \nabla P = \int_\Omega K {\partial P_1 \over \partial z} -\int_\Gamma P_1 K(\widehat z\cdot n)
 $$
 
-If we apply the boundary condition $${\partial P \over \partial n} =0$$ on $$\Gamma$$$, the second term would vanish.
+If we apply the boundary condition $${\partial P \over \partial n} =0$$ on $$\Gamma$$, the second term would vanish.
 
 
 ## Step_2: Solve reaction-infiltration($$\chi$$)
