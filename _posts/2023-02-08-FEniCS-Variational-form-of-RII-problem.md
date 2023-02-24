@@ -57,7 +57,7 @@ $$
 \int_\Omega MP P_1 + \int_\Omega [\nabla \cdot(P_1 K(\widehat z - S\nabla P)) - \nabla P_1 \cdot  K(\widehat z - S\nabla P) ]=0
 $$
 
-Apply the divergence theorem ($ \iiint_V (\nabla \cdot {P})dV = \oiint_S (P \cdot \widehat n)dS $) to generate boundary integrals, surface normal $ \widehat n $, surface domain $ \Gamma = \partial \Omega $, 
+Apply the divergence theorem ($$ \iiint_V (\nabla \cdot {P})dV = \oiint_S (P \cdot \widehat n)dS $$) to generate boundary integrals, surface normal $$ \widehat n $$, surface domain $$ \Gamma = \partial \Omega $$, 
 
 $$
 \int_\Omega MP P_1 + \int_\Gamma P_1 K(\widehat z-S\nabla P) \cdot n - \int_\Omega \nabla P_1 \cdot K(\widehat z -S\nabla P) =0
@@ -91,9 +91,11 @@ $$
 $$
 
 Integrating by parts,
+
 $$
 \int_\Omega {\partial \over \partial x} (\phi{\partial \chi \over \partial x}) C_1 = [\phi{\partial \chi \over \partial x} C_1]_{\partial \Omega}- \int_\Omega  \phi {\partial \chi \over \partial x}{\partial C_1 \over \partial x}
 $$
+
 The eq(13) becomes,
 
 $$
