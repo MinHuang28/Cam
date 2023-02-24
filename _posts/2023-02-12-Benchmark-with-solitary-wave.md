@@ -142,7 +142,7 @@ $$
 
 That is, porosity only changes by compaction. The compaction rate is controlled by the divergence of the melt flux and the viscous resistance of the matrix to volume changes.
 
-I'm not sure what's going on here since the equations should be as follows,
+If we set $$\zeta $$ to be 1, then  $$P = \zeta C = C$$, the equations could be written as follows,
 
 $$
 {\partial \phi \over \partial t} = P
