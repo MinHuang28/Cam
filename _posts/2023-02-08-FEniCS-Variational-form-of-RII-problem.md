@@ -11,6 +11,8 @@ tags:
 
 Create the weak form of RII governing equations for FEniCS project
 
+As we previously discussed, the governing equations for RII problems are as follows,
+
 ## Governing equations for RII problems
 
 $$
@@ -29,6 +31,25 @@ $$
 q \cdot ({\nabla \chi \over Da} - \hat z)= {1\over DaPe} {\partial \over \partial x}(\phi{\partial \chi \over \partial x})-\chi
 $$
 
+As we can see, the strong form PDEs (1)-(4) are of the second order. 
+
+This requires a high level of smoothness in the solution. 
+
+That means the second derivative of the displacement must exist and be continuous! 
+
+This also implies needs for parameters that are not influenceable such as geometry (sharp edges) and material parameters.
+
+To develop the finite element formulation, the PDEs must be restated in an integral form known as the **weak form**. The weak form and the strong form are **equivalent**.
+
+The Steps of creating the weak form would be sth like this,
+
+1. Multiply the governing equation and the traction boundary condition by an **arbitrary** function (Called **test function**) and then integrate over the domains
+
+   Note: Arbitrariness of the test function is crucial for the weak form. Otherwise the strong form is **NOT** equivalent to the weak form.
+
+2. Transform eqs into a form containing only first derivatives. (Usually applying the integration by parts)
+
+Let’s start!
 
 
 ## Step_1: Solve Buoyancy-driven compaction (P)
