@@ -137,9 +137,7 @@ $$
 Then we can get the characteristic polynomial,
 
 $$
-\begin{eqnarray}
-\frac{\unicode[STIX]{x1D70E}}{Da}m^{3}+\left(\unicode[STIX]{x1D70E}{\mathcal{K}}-\frac{n}{Da{\mathcal{S}}}\right)m^{2}-\left(\frac{n{\mathcal{K}}}{{\mathcal{S}}}+\frac{\unicode[STIX]{x1D70E}}{Da}k^{2}\right)m+\left(n-\unicode[STIX]{x1D70E}{\mathcal{K}}\right)k^{2}=0,
-\end{eqnarray}
+{\sigma \over Da} m^{3} + (\sigma \mathcal{K} - {n \over {Da\mathcal{S}}})m^{2} - ({n \mathcal{K} \over \mathcal{S}} + {\sigma \over Da} k^{2})m+ (n-\sigma \mathcal{K})k^{2}=0,
 $$
 
 Eq(22) has three roots $$m_j$$ (*j*=1,2,3), and hence the compaction pressure perturbation will be given by
