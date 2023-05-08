@@ -16,6 +16,7 @@ The full system of PDEs that govern the fluid mechanics
 ## Governing equations
 
 1.**Conservation of mass** in both phases
+
 $$
 {\partial (1-\phi) \over \partial t} + \nabla \cdot ((1-\phi) \mathbf{v_s})=-\Gamma
 $$
@@ -27,6 +28,7 @@ $$
 where $$\phi$$ is the porosity, $$(1-\phi)$$ is the fraction of solid phase, t is time, $$v_l$$ is fluid velocity, and $$v_s$$ is solid velocity, $$\Gamma$$ is the melting rate. We assume that $$\Gamma$$ is proportional to the undersaturation of soluble component in the melt, so $$\Gamma = R A(\phi,c_s)(c_l^{eq}-c_l)$$, where R is a kinetic coefficient with units 1/times.
 
 2.**Darcy’s law** (conservation of momentum for liquid)
+
 $$
 \phi (\mathbf{v_l}-\mathbf{v_s}) = {k \over \mu} ((1-\phi) \Delta\rho g \mathbf{\hat z} -\nabla \mathcal{P})
 $$
@@ -43,6 +45,7 @@ $$
 where D is diffusivity in the liquid phase; diffusion through the solid phase is negligible, $$C_\Gamma$$, is the concentration of reactively produced melts. 
 
 The solid conservation,
+
 $$
 {\partial \over \partial t} ((1-\phi) c_s) + \nabla \cdot ((1-\phi) \mathbf{v_s} c_s ) =- c_\Gamma \Gamma
 $$
@@ -58,9 +61,11 @@ Assuming zero solubility at the base area z=0, $$c_{eq}= \beta z$$,
 the **concentration** $$c_\Gamma$$ is offset from the equilibrium concentration by $$\alpha$$, $$c_\Gamma=\beta z +\alpha$$,
 
 Characteristic velocity,
+
 $$
 w_0 = {k_0 \Delta \rho g \over  \mu \phi_0}
 $$
+
 Other characteristic scales:
 
 $$(x,z) = H (x’,z') $$,  $$\nabla$$= $${1\over H } \nabla$$,                      $$ \phi = \phi_0 \phi’$$,                       $k=k_0 (d')^2 (\phi') ^n$
@@ -103,6 +108,7 @@ $$
 $$
 
 Eq (1) becomes,
+
 $$
 -{\partial \phi \over \partial t} + (1-\phi) P/\zeta - \mathbf{v_s} \nabla \cdot \phi = -\Gamma
 $$
@@ -130,6 +136,7 @@ $$
 The dimensionless reactive melting rate $$\Gamma$$ is equal to the scaled undersaturation $$\chi$$, 
 
 We simplify the equations by taking the limit of small porosity $$\phi_0 <<M << 1$$, and $$M = {\beta H \over \alpha}$$, so $${\phi_0 \over M} << 1$$. We also assume $\zeta$ is a constant, the equation becomes,
+
 $$
 {\partial \phi \over \partial t}= P + \chi
 $$
@@ -189,10 +196,13 @@ $$
 $$
 
 Stiffness $$S = M  {\delta^2 \over H^2} = {\beta H \over \alpha } {K_0 \zeta \over H^2} = {\beta k_0 \zeta \over \alpha H} $$, 
+
 $$
 \phi(\mathbf{v_l} -\phi_0 \mathbf{v_s}) = k((1-\phi_0 \phi)\mathbf{\hat z}- S\nabla \mathcal{P})
 $$
+
 Taking the limit of small porosity $$\phi_0 <<M << 1$$, we can neglect the $$\phi \phi_0$$ term and get,
+
 $$
 \phi \mathbf {v_l} = k (\hat z - S \nabla \mathcal{P})
 $$
@@ -202,13 +212,17 @@ $$
 ### 4. The dimensionless Chemical component conservation
 
 Eq (5)  $${\partial \over \partial t} (\phi c_l)+  \nabla \cdot (\phi \mathbf{v_l} c_l) = \nabla \cdot (\phi D \nabla c_l) + c_\Gamma \Gamma$$
+
 $$
 \phi{\partial c_l\over \partial t} +c_l{\partial \phi\over \partial t}+  \phi \mathbf{v_l} \nabla \cdot c_l +  c_l \nabla \cdot (\phi \mathbf{v_l})  = \nabla \cdot (\phi D \nabla c_l) + c_\Gamma \Gamma
 $$
+
 Use eq(2) $${\partial \phi \over \partial t} + \nabla \cdot (\phi \mathbf{v_l})=\Gamma$$ to simply eq(28)
+
 $$
 \phi{\partial c_l\over \partial t} +\phi \mathbf{v_l} \cdot \nabla c_l = \nabla \cdot (\phi D \nabla c_l) + (c_\Gamma - c_l)\Gamma
 $$
+
 Scaled eq(4),
 
 $$
@@ -221,20 +235,24 @@ $$
 $$
 
 Divide the whole equation by $$\phi_0 w_0 \beta$$, and $$M= {\beta H \over \alpha}$$,  
+
 $$
 M\phi{\partial c_l\over \partial t} +\phi \mathbf{v_l} \cdot \nabla  c_l =  {D \over w_0 H} \nabla \cdot ( \phi \nabla c_l) +\Gamma
 $$
+
 Since $$Pe = {w_o H \over D}$$, eq(28) becomes,
+
 $$
 \phi M{\partial c_l\over \partial t} +\phi \mathbf{v_l} \cdot \nabla  c_l =  {1 \over Pe} \nabla \cdot ( \phi \nabla c_l) +\Gamma
 $$
 
 Given $$M= {\beta H \over \alpha} <<1$$, we can neglect the first term. Given undersaturation $$\chi = Da(z-c_l)$$, $$c_l = z - {\chi \over Da}$$,
+
 $$
 \nabla c_l = \nabla(z- {\chi \over Da})=\hat {z}-{\nabla\chi \over Da}
 $$
 
- $$\nabla \cdot (\phi \nabla c_l)={\partial \over \partial x} (\phi {\partial c_l\over \partial x}) + {\partial \over \partial z} (\phi {\partial c_l\over \partial z})$$,but $$c_l$$ is meaningful in x axis,
+$$\nabla \cdot (\phi \nabla c_l)={\partial \over \partial x} (\phi {\partial c_l\over \partial x}) + {\partial \over \partial z} (\phi {\partial c_l\over \partial z})$$,but $$c_l$$ is meaningful in x axis,
 
 $$
 \nabla \cdot (\phi \nabla c_l)={\partial \over \partial x} (\phi {\partial c_l\over \partial x}) =-{1\over Da} {\partial \over \partial x} (\phi {\partial \chi\over \partial x})
@@ -255,14 +273,19 @@ $$
 ### 5. The dimensionless Chemical component conservation
 
 eq (5) $${\partial \over \partial t} ((1-\phi) c_s) + \nabla \cdot ((1-\phi) \mathbf{v_s} c_s ) =- c_\Gamma \Gamma$$, 
+
 $$
 c_s{\partial (1-\phi) \over \partial t} +(1-\phi) {\partial c_s \over \partial t} + (1-\phi) \mathbf{v_s} \cdot \nabla  c_s + c_s \nabla \cdot ((1-\phi) \mathbf{v_s}) =- c_\Gamma \Gamma
 $$
+
 Use eq(1) $${\partial (1-\phi) \over \partial t} + \nabla \cdot ((1-\phi) \mathbf{v_s})=-\Gamma$$ to simply eq(35),
+
 $$
 (1-\phi) {\partial c_s \over \partial t} + (1-\phi) \mathbf{v_s} \cdot \nabla c_s =(c_s- c_\Gamma) \Gamma
 $$
+
 Scale eq(36),
+
 $$
 (1-\phi_0\phi) {\partial c_{s0} c_s \over \partial (\alpha /w_0 \beta)t} + (1-\phi_0 \phi) \phi_0 w_0 {c_{s0} \over H} \mathbf{v_s} \cdot \nabla c_s =(c_{s0} c_s- c_\Gamma') (\phi_0 w_0 \beta /\alpha) \Gamma
 $$
@@ -272,6 +295,7 @@ $$
 $$
 
 Divided by $$w_0 \beta /\alpha $$, 
+
 $$
 c_{s0}(1-\phi_0\phi) {\partial c_s \over \partial t} + {\phi_0 c_{s0}\alpha \over\beta H} (1-\phi_0 \phi) \mathbf{v_s} \cdot \nabla c_s ={\phi_0}(c_{s0} c_s- c_\Gamma') \Gamma
 $$
@@ -281,16 +305,15 @@ $$
 $$
 
 If we take the limit $$\phi_0 <<M<<1$$, 
+
 $$
 {\partial c_s \over \partial t} = {\phi_0 \over (1-\phi_0 \phi) c_{s0}} (c_{s0} c_s-\beta H (z-{\chi \over Da})-\alpha) \chi
 $$
 
-
-
-
 ## Dimensionless equations
 
-So the four dimensionless governing equations (1)-(4) become,
+So the five dimensionless governing equations (1)-(4) become,
+
 $$
 {\partial \phi \over \partial t} = \mathcal{P} + \chi
 $$
