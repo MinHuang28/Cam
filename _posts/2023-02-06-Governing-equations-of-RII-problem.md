@@ -33,7 +33,7 @@ $$
 \phi (\mathbf{v_l}-\mathbf{v_s}) = {k \over \mu} ((1-\phi) \Delta\rho g \mathbf{\hat z} -\nabla \mathcal{P})
 $$
 
-A Darcy flux $$\phi (\mathbf{v_l}-\mathbf{v_s})$$ is driven by gravity $$g\hat \mathbf z$$ associated with the density difference $$\Delta \rho$$, and by compaction pressure gradient $$\nabla \mathcal{P}$$. The permeability k is divided by liquid viscosity $$\mu$$, depending on the porosity. $$k =k_0 (\phi/\phi_0)^n$$, where $$k_0$$ is a reference permeability at a reference porosity $$\phi_0$$, and n is a constant. 
+A Darcy flux $$\phi (\mathbf{v_l}-\mathbf{v_s})$$ is driven by gravity $$g\hat \mathbf {z}$$ associated with the density difference $$\Delta \rho$$, and by compaction pressure gradient $$\nabla \mathcal{P}$$. The permeability k is divided by liquid viscosity $$\mu$$, depending on the porosity. $$k =k_0 (\phi/\phi_0)^n$$, where $$k_0$$ is a reference permeability at a reference porosity $$\phi_0$$, and n is a constant. 
 
 3.**Chemical component conservation** equation, consisting of three contributions: diffusion, advection and chemical source term.
 
