@@ -33,7 +33,7 @@ $$
 \phi (\mathbf{v_l}-\mathbf{v_s}) = {k \over \mu} ((1-\phi) \Delta\rho g \mathbf{\hat z} -\nabla \mathcal{P})
 $$
 
-A Darcy flux $$\phi (\mathbf{v_l}-\mathbf{v_s})$$ is driven by gravity $$g\hat z$$ associated with the density difference $$\Delta \rho$$, and by compaction pressure gradient $$\nabla \mathcal{P}$$. The mobility K, representing the permeability k divided by liquid viscosity $$\mu$$, depends on the porosity. $$K =K_0 (\phi/\phi_0)^n$$, where $$K_0$$ is a reference mobility at a reference porosity $$\phi_0$$, and n is a constant. 
+A Darcy flux $$\phi (\mathbf{v_l}-\mathbf{v_s})$$ is driven by gravity $$g\hat \mathbf z$$ associated with the density difference $$\Delta \rho$$, and by compaction pressure gradient $$\nabla \mathcal{P}$$. The permeability k is divided by liquid viscosity $$\mu$$, depending on the porosity. $$k =k_0 (\phi/\phi_0)^n$$, where $$k_0$$ is a reference permeability at a reference porosity $$\phi_0$$, and n is a constant. 
 
 3.**Chemical component conservation** equation, consisting of three contributions: diffusion, advection and chemical source term.
 
@@ -58,7 +58,7 @@ $$
 
 Assuming zero solubility at the base area z=0, $$c_{eq}= \beta z$$, 
 
-the **concentration** $$c_\Gamma$$ is offset from the equilibrium concentration by $$\alpha$$, $$c_\Gamma=\beta z +\alpha$$,
+The **concentration** $$c_\Gamma$$ is offset from the equilibrium concentration by $$\alpha$$, $$c_\Gamma=\beta z +\alpha$$,
 
 Characteristic velocity,
 
@@ -68,21 +68,40 @@ $$
 
 Other characteristic scales:
 
-$$(x,z) = H (x’,z') $$,  $$\nabla$$= $${1\over H } \nabla$$,                      $$ \phi = \phi_0 \phi’$$,                       $k=k_0 (d')^2 (\phi') ^n$
+$$(x,z) = H (x’,z') $$,  $$\nabla$$= $${1\over H } \nabla$$,
 
-$$\mathbf{v_l}=w_0 \mathbf{v_l}'=(k_0 \Delta \rho g/\mu \phi_0) \mathbf{v_l}' $$,               $$\mathbf{v_s}=\phi_0 w_0 \mathbf{v_s}’$$,               $$t=\alpha/(w_0\beta)t’$$,                   
+$$ \phi = \phi_0 \phi’$$,
 
-$$ \mathcal{P} = \mathcal{P_0} \mathcal{P}’ =(\zeta_0 \phi_0 w_0 \beta/\alpha) \mathcal{P}'$$,                 $$c_l=\beta H c_l’$$,                   	$$\Gamma = (\phi_0 w_0 \beta / \alpha) \Gamma’$$,
+$k=k_0 (d')^2 (\phi') ^n$
 
-$c_s = c_{s0} c_s’$,                                                    $d = d_0 d'=bc_{s0} d'$,          $$\zeta=\zeta_0 \zeta’$$,
+$$\mathbf{v_l}=w_0 \mathbf{v_l}'=(k_0 \Delta \rho g/\mu \phi_0) \mathbf{v_l}' $$,
+
+$$\mathbf{v_s}=\phi_0 w_0 \mathbf{v_s}’$$,
+
+$$t=\alpha/(w_0\beta)t’$$,                   
+
+$$ \mathcal{P} = \mathcal{P_0} \mathcal{P}’ =(\zeta_0 \phi_0 w_0 \beta/\alpha) \mathcal{P}'$$,
+
+$$c_l=\beta H c_l’$$,
+
+$$\Gamma = (\phi_0 w_0 \beta / \alpha) \Gamma’$$,
+
+$c_s = c_{s0} c_s’$,
+
+$d = d_0 d'=bc_{s0} d'$, 
+
+$$\zeta=\zeta_0 \zeta’$$,
 
 **Scaled reaction rate**
 
 Reaction rate $$\Gamma = R A(\phi,c_s)(c_l^{eq}-c_l)$$,
+
 $$
 {\phi_0 w_0 \beta \over \alpha}\Gamma = R A'(\beta H z-\beta H c_l)\\
 $$
+
 So the scaled Reaction rate $$\Gamma’$$ is,
+
 $$
 \Gamma={R \alpha \over \phi_0 w_0 \beta} A' (\beta H z-\beta H c_l)\\
 \Gamma={\alpha R H \over \phi_0 w_0} A'(z-c_l) \\
@@ -138,7 +157,7 @@ The dimensionless reactive melting rate $$\Gamma$$ is equal to the scaled unders
 We simplify the equations by taking the limit of small porosity $$\phi_0 <<M << 1$$, and $$M = {\beta H \over \alpha}$$, so $${\phi_0 \over M} << 1$$. We also assume $\zeta$ is a constant, the equation becomes,
 
 $$
-{\partial \phi \over \partial t}= P + \chi
+{\partial \phi \over \partial t}= \mathcal{P} + \chi
 $$
 
 
@@ -174,7 +193,7 @@ $$
 eq (3) Darcy’s law, $$\phi (\mathbf{v_l}-\mathbf{v_s}) = {k \over \mu} ((1-\phi) \Delta\rho g\hat z -\nabla \mathcal{P})$$, 
 
 $$
-\phi_0\phi (w_0v_l-\phi_0 w_0 v_s) = K_0 K ((1-\phi_0\phi) \Delta\rho g\hat z - {1 \over H} \nabla ((\zeta \phi_0 w_0 \beta/\alpha) P))
+\phi_0\phi (w_0v_l-\phi_0 w_0 v_s) = K_0 K ((1-\phi_0\phi) \Delta\rho g\hat z - {1 \over H} \nabla ((\zeta \phi_0 w_0 \beta/\alpha) \mathcal{P}))
 $$
 
 Taking the limit of small porosity $$\phi_0 <<M << 1$$, we can neglect the $$\phi_0 w_0 v_s$$ and $$\phi_0\phi \Delta\rho g\hat z $$, 
@@ -311,8 +330,30 @@ $$
 $$
 
 ## Dimensionless equations
+So the five governing equations are,
 
-So the five dimensionless governing equations (1)-(4) become,
+$$
+{\partial \phi \over \partial t} + {\phi_0 \over M} \mathbf{v_s} \cdot \nabla \phi= (1-\phi_0 \phi) C+\chi
+$$
+
+$$
+M (1- \phi_0 \phi) C +  \phi \cdot \nabla v_l+ (v_l - \phi_0 v_s) \cdot \nabla \phi = 0
+$$
+
+$$
+\phi(\mathbf{v_l} -\phi_0 \mathbf{v_s}) = k((1-\phi_0 \phi)\mathbf{\hat z}- S\nabla \mathcal{P})
+$$
+
+$$
+{M \over Da}\phi{\partial \chi\over \partial t} +\phi v_l \cdot [{\nabla\chi \over Da}-z] =  {1 \over Pe} \nabla \cdot (\phi({\nabla \chi \over Da}-z)) - \chi
+$$
+
+$$
+{\partial c_s \over \partial t} +{\phi_0 \over M} \mathbf{v_s}\cdot \nabla c_s = {\phi_0 \over (1-\phi_0 \phi) c_{s0}} (c_{s0} c_s-(\beta H + \alpha) \Gamma
+$$
+
+
+Taking the limit of small porosity, the five dimensionless governing equations (1)-(4) become,
 
 $$
 {\partial \phi \over \partial t} = \mathcal{P} + \chi
