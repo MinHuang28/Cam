@@ -13,7 +13,7 @@ Education
 ======
 * **Ph.D in Earth Sciences, University of Cambridge, 2022-now**
   * Supervisor: Prof. John Rudge
-  * Proposed PhD project: Numerical modeling of melt migration in the subduction zones.
+  * Ongoing PhD project: Reaction-infiltration instability in the partially molten mantle.
 
 * **M.S. in Geodynamics, Institute of Geology and Geophysics, Chinese Academy of Sciences, 2019-2022**
   * Supervisor: Dr. Yang Li 
@@ -27,16 +27,16 @@ Education
 
 Publications
 ======
+* M. Huang, Y. Li & L. Zhao (2022). **Effects of Heterogeneous Thermal, Compositional and Rheological Properties on the Long-Term Evolution of Deep Mantle Thermochemical Piles**, Science China: Earth Science, 1-12. DOI:[https://doi.org/10.1007/s11430-021-9950-7]( https://doi.org/10.1007/s11430-021-9950-7)\\
+Contribution:
+  * Performed a series of numerical experiments over a range of buoyancy ratios, compositional viscosity ratios, and internal heating rates and analysed their effects to thermochemical piles
+  * Compared simulations with constant heating and radioactive decay heating, and found that although simulations with radioactive decay showed a slight decline of the stability of piles, there was little difference among them
+
 * M. Huang, Y. Zhou, L. Lu, W. Zheng & P. Zhang (2019). **Some Thoughts on Measuring Earthquake Deformation Using Optical Imagery, IEEE Transactions on Geoscience and Remote Sensing**, 58(2), 1052-1062. DOI:[10.1109/TGRS.2019.2943192](https://ieeexplore.ieee.org/document/8878012)\\
 Contribution:
   * Compiled and analysed all the earthquakes that have been investigated with optical image matching by 2019
   * Proposed a new DEM-based method using the ALOS World 3D DEM to reduce the orthorectification errors
   * Re-analysed coseismic slip distribution and shallow slip deficit (SSD) and found that the SSD model may primarily be artefacts in the measurements
-
-* M. Huang, Y. Li & L. Zhao (2022). **Effects of Heterogeneous Thermal, Compositional and Rheological Properties on the Long-Term Evolution of Deep Mantle Thermochemical Piles**, Science China: Earth Science, 1-12. DOI:[https://doi.org/10.1007/s11430-021-9950-7]( https://doi.org/10.1007/s11430-021-9950-7)\\
-Contribution:
-  * Performed a series of numerical experiments over a range of buoyancy ratios, compositional viscosity ratios, and internal heating rates and analysed their effects to thermochemical piles
-  * Compared simulations with constant heating and radioactive decay heating, and found that although simulations with radioactive decay showed a slight decline of the stability of piles, there was little difference among them
 
 Field Trips
 ======
@@ -48,10 +48,10 @@ Field Trips
 
 Skills
 ======
-* Good at Matlab, ArcGIS, and LaTeX
-* Just Start with python and FEniCS
+* Good at Python, Matlab, ArcGIS, and LaTeX
+* Just get familiar with DOLFINx / FEniCS
 
 Activities
 ======
-* Current player of the University of Cambridge badminton team
+* Active player of the University of Cambridge badminton team
 * Volunteer for science popularization of Danxiashan UNESCO Global Geopark, China
